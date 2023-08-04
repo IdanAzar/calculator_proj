@@ -12,36 +12,37 @@ import './Calculator.css'
 
 		return (
 			<div className="frame">
-				<Title value="CALCULATOR" />
+				<Title className='Title' value="CALCULATOR" />
 				<div class="mainCalc">
 					<CalculatedRow stringEx={exercise}/>
+					<br/>
 					<div className="button-row">
-						<Button value="Clear" className="buttonComponet" setExercise={setExercise}/>
-						<Button value="Delete" className='buttonComponet' setExercise={setExercise} />
-						<Button value="." className='buttonComponet' setExercise={setExercise}/>
-						<Button value="/" className='buttonComponet' setExercise={setExercise}/>
+						<Button value="Clear"  setExercise={setExercise}/>
+						<Button value="Delete" setExercise={setExercise} />
+						<Button value="."  setExercise={setExercise}/>
+						<Button value="/"  setExercise={setExercise}/>
 					</div>                    
 					<div className="button-row">
-						<Button value="7" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="8" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="9" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="*" className='buttonComponet' setExercise={setExercise}/>
+						<Button value="7"  setExercise={setExercise}/>
+						<Button value="8"  setExercise={setExercise}/>
+						<Button value="9"  setExercise={setExercise}/>
+						<Button value="*"  setExercise={setExercise}/>
 					</div>
 					<div className="button-row">
-						<Button value="4" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="5" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="6" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="-" className='buttonComponet' setExercise={setExercise}/>
+						<Button value="4"  setExercise={setExercise}/>
+						<Button value="5"  setExercise={setExercise}/>
+						<Button value="6"  setExercise={setExercise}/>
+						<Button value="-"  setExercise={setExercise}/>
 					</div>
 					<div className="button-row">
-						<Button value="1" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="2" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="3" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="+" className='buttonComponet' setExercise={setExercise}/>
+						<Button value="1"  setExercise={setExercise}/>
+						<Button value="2"  setExercise={setExercise}/>
+						<Button value="3"  setExercise={setExercise}/>
+						<Button value="+"  setExercise={setExercise}/>
 					</div>
-					<div className="button-row">
-						<Button value="0" className='buttonComponet' setExercise={setExercise}/>
-						<Button value="=" className='buttonComponet' setExercise={setExercise}/>
+					<div className="button-row" id = "last">
+						<Button value="0"  setExercise={setExercise}/>
+						<Button value="="  setExercise={setExercise}/>
 					</div>
 				</div>
 			</div>

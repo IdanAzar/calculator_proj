@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 
 function CalculatedRow(props) {
     // TODO: functional commponent
@@ -7,7 +6,7 @@ function CalculatedRow(props) {
 
     return(
         <div className="screen-row"> 
-                <input type='text' value={props.stringEx} readOnly />
+                <input type='text' className="input-row" value={props.stringEx} readOnly />
         </div>
     ); 
 }

@@ -1,9 +1,85 @@
-.button-row{
-  width: 300px;
+/* Styles for the calculator component */
+
+.frame {
   display: flex;
-  color:aqua;
-  flex-wrap: wrap;
-  display: flex;
-  gap: 33px; 
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
+.mainCalc {
+  background-color: #f1f1f1;
+  border: 1px solid #1d1c1c;
+  border-radius: 5px;
+  padding: 20px;
+  width: 350px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6ddec;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.input-row input[type='text'] {
+  /* Basic text properties */
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  
+  /* Other properties */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Ensure the input takes full width of the parent */
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* button state*/
+input[type=button] {
+  background-color: bisque;
+  background-image: linear-gradient(to bottom, #f78708, #f1b668);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state */
+input[type=button]:hover {
+  background-color: #f3c381;
+  background-image: linear-gradient(to bottom, #ab1bcf, #cc78f3);
+}
+
+/* Active state */
+input[type=button]:active {
+  background-image: linear-gradient(to bottom, #cf1b39, #ee91a5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.calculator-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  
+}
+
+
+
+/* Styling for the "=" button using ID selector */
