@@ -17,11 +17,21 @@ function evaluate(ch, exercise) {
       case '8':
       case '9':
       case '.':
-        exercise += ch;
+        // eslint-disable-next-line
+        if(exercise != 'Error') {
+          exercise += ch;
+        }
         break;
 
       case 'Delete':
-        exercise = exercise.slice(0, -1);
+        /* eslint-disable */
+        if(exercise != 'Error' && exercise != Infinity ) {
+          exercise = exercise.slice(0, -1);
+        }
+        else {
+          exercise = ''
+        }
+        /* eslint-enable */
         break;
       
       case 'Clear':
@@ -30,15 +40,20 @@ function evaluate(ch, exercise) {
 
       case '=':
         try {
+          /* eslint-disable */
           exercise = eval(exercise)
-          if (exercise === 'Infinity') {
+          if (exercise == Infinity) {
             exercise = 'Error'
+          }
+          else if (exercise == undefined) {
+            exercise = ''
           }
       } catch (e) {
           if (e instanceof SyntaxError) {
               exercise = 'Error';
           }
       }
+      /* eslint-enable */
       break;
 
       default:
